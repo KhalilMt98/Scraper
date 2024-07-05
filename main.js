@@ -32,5 +32,7 @@ async function scraper(searchTerm) {
         fs.writeFileSync('jobs.json', JSON.stringify(jobs, null, 2));
 }
 
-
+catch (error) {
+    console.error('Error fetching data:', error);
+}
 }
