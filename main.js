@@ -16,7 +16,7 @@ async function scraper(searchTerm) {
             const jobDescription = $(element).find('.result-card__snippet').text().trim();
             const jobPostDate = $(element).find('time').attr('datetime');
             const applicationLink = $(element).find('.result-card__full-card-link').attr('href');
-            const skillsNeeded = [];  // Skills extraction can be complex and might need additional parsing
+            const skillsNeeded = [];  
 
             jobs.push({
                 jobTitle,
@@ -36,3 +36,8 @@ catch (error) {
     console.error('Error fetching data:', error);
 }
 }
+
+//searchTerm -> MLops
+
+scrapeJobs('MLOps');
+
