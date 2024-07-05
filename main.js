@@ -39,5 +39,5 @@ catch (error) {
 
 //searchTerm -> MLops
 
-scrapeJobs('MLOps');
+scraper('MLOps');
 
